@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+    <title>ConectionOfConnectors</title>
+</head>
+
+<body>
+    <h1>Conexión de Conectores</h1>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" onclick="changeTap(event,'rj-45')">RJ 45</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="changeTap(event,'fuente-de-alimentacion')">Fuente De
+                    Alimentación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true" onclick="changeTap(event,'tension-c/hembra')">C/Hembra</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true"
+                    onclick="changeTap(event,'tension-c/macho-larga-distancia')">C/Macho larga distancia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true"
+                    onclick="changeTap(event,'tension-c/macho-corta-distancia')">C/Macho corta distancia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true"
+                    onclick="changeTap(event,'balum')">Balum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-disabled="true"
+                    onclick="changeTap(event,'dvr')">DVR</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade " id="rj-45" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <img src="public/cable cruzado tipos.jpg" alt="imagen">
+                <p> - Hay dos tipos de formas para conectar los cables trenzados<br><br>
+                    - La Tipo A o la Tipo B <br><br>
+                    <span>- Nosotros empleamos la forma tipo B</span>
+                </p>
+            </div>
+            <div class="tab-pane fade " id="fuente-de-alimentacion" role="tabpanel"
+                aria-labelledby="pills-profile-tab" tabindex="0"><img src="public/CONECCION-A-FUENTE.png"
+                    alt="imagen">
+                    <p> - Utilizamos el par trenzados de los colores <span> naranja</span> para la conexión positiva, lo conectamos a +V de la fuente que sera el positivo.<br><br>
+                        - Utilizamos el par trenzados de los colores  <span> verde</span> para la conexión negativa, lo conectamos a -V de la fuenteque sera el negativo.</p>
+            </div>
+            <div class="tab-pane fade " id="tension-c/hembra" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0"><img src="public/conector-hembra.png" alt="imagen">
+                <p>
+                    - Utilizamos el color<span> naranja</span> para la conexión positiva.<br><br>
+                    - Utilizamos el color <span> naranja/blanco</span> para la conexión negativa.
+                </p>
+            </div>
+            <div class="tab-pane fade " id="tension-c/macho-corta-distancia" role="tabpanel"
+                aria-labelledby="pills-disabled-tab" tabindex="0"><img src="public/conector-macho-corta-distancia.png"
+                    alt="imagen">
+                    <p>- Utilizamos el color <span> naranja</span> para la conexión positiva.<br><br>
+                       - Utilizamos el color <span> naranja/blanco</span> para la conexión negativa.
+                    </p>
+            </div>
+            <div class="tab-pane fade " id="tension-c/macho-larga-distancia" role="tabpanel"
+                aria-labelledby="pills-disabled-tab" tabindex="0"><img src="public/conector-macho-larga-distancia.png"
+                    alt="imagen">
+                    <p>- Utilizamos el par trenzados de los colores <span> naranja</span> para la conexión positiva.<br>
+                       - Utilizamos el par trenzados de los colores  <span> verde</span> para la conexión negativa.</p>
+            </div>
+            <div class="tab-pane fade " id="balum" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <img src="public/balum-Conexion.png" alt="imagen">
+                <p>
+                    - Utilizamos el color<span> azul</span> para la conexión positiva.<br><br>
+                    - Utilizamos el color <span> azul/blanco</span> para la conexión negativa.
+                </p>
+            </div>
+            <div class="tab-pane fade " id="dvr" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <img src="public/dvr-conexion.png" alt="imagen">
+                <p>
+                    - En la entrada<span> ETHENDER</span> conectaremos el cable de red que viene desde el moden o proveedor de internet ej fibertel.<br><br>
+                    - En la entrada<span> VGA o HDMI</span> conectaremos la pantalla en la cual se podra ver lo que graban las camaras.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
